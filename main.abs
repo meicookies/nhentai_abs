@@ -10,7 +10,8 @@ else {
     kode = arg(2)
 
     doujin = htmlq.pretty("https://nhentai.net/g/$kode/")
-    thumbnail = doujin.att("#thumbnail-container", "data-src", "img")                     
+    thumbnail = doujin.att("#thumbnail-container", "data-src", "img")     
+    
     if (thumbnail.view.lines().len() != 0) {
         for img in thumbnail.view.replace("t.", "i.").split() {
             for unduh in img.replace("i.jpg", ".jpg").lines() {
