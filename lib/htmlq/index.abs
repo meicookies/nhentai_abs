@@ -1,0 +1,12 @@
+htmlq = {}
+
+htmlq.pretty = {}
+htmlq.pretty = f(url) {
+    {
+        "att": f(id, at, tg) {
+            res = $(curl --silent $url | htmlq --pretty '$id' --attribute $at $tg)
+            { "view": "$res" }
+        }
+    }
+}
+return htmlq
