@@ -1,0 +1,5 @@
+wget = f(dir, url) {
+    exec("wget -q --show-progress -P $dir $url")
+}
+
+return wget
