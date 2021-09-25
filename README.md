@@ -1,5 +1,5 @@
 # nhentai_abs
-nhentai scrap abs script
+nhentai scrap with abs script
 
 # here
 this scripting lang looks like shell script
